@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logginn page</title>
+    <link rel="stylesheet" type="text/css" href="logginn.css" >
+   
+</head>
+<body>
+   <div class="logo">
+    <a href="index.html"><img src="logo/SquareEyes_Logo.png" width="65" height="65" alt="logo for website"></a>
+   </div>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <h1>Logginn</h1>
+        </div>
+      
+        <div class="container">
+          <label for="Brukernavn"><b>Brukernavn</b></label>
+          <input type="text" id="Skrivinnbrukernavn" name="name" required>
+      
+          <label for="passord"><b>Passord</b></label>
+          <input type="password" id="TastinnPassord" name="password" required>
+      
+          <a href="#!" class="btn">Logginn</a>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Husk meg
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <a href="index.html" class="cancelbtn">Avbryt</a>
+          <span class="psw">Glemt <a href="#">passord?</a></span>
+        </div>
+      </form>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+.logo-container {
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header {
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.text1 img,
+.text2 img,
+.text3 img {
+    padding: 0 10px;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text3,
+.text4 {
+    margin-top: 0px;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 0 0px;
+}
+
+.text4 {
+    margin-right: 140px;
+}
+
+.text-container {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.text-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-container img:hover {
+    transform: scale(1.1);
+}
+
+.active img {
+    animation: shake 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .text-container img {
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .text-container {
+        margin: 0;
+    }
+
+    .text3 {
+        flex: 0.5;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 769px) {}
+
+@media only screen and (max-width: 480px) {}

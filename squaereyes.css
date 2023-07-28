@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+.logo {
+    background-color: maroon;
+}
+
+h1,
+p,
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+    font-size: 15px;
+
+}
+
+.box {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+
+
+}
+
+.box:nth-child(1),
+.box:nth-child(2) {
+    background-color: rgb(14, 118, 144);
+    color: white;
+}
+
+.button1,
+.button2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}

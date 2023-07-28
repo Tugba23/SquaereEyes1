@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppret</title>
+    <link rel="stylesheet" type="text/css" href="Oppret.css">
+
+</head>
+<body>
+  <div class="logo">
+    <a href="index.html"><img src="logo/SquareEyes_Logo.png" width="65" height="65" alt="logo for website"></a>
+   </div>
+   <div class="header">
+    <h1>Information</h1>
+   </div>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="icons/login.png" style="width: 50px; height: 50px;" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="Skrivnavnetditt"><b>Brukernavn</b></label>
+          <input type="text" id="Skrivnavnetditt" name="name" required>
+          <label for="Tastinnpassord"><b>Password</b></label>
+          <input type="password" id="Tastinnpassord" name="password" required>          
+      
+          <a href="checkout.html" class="btn">Oppret konto</a>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Husk meg
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <a href="index.html" class="cancelbtn">Avbryt</a>
+          <span class="psw">Glemt passord <a href="#">passord?</a></span>
+        </div>
+      </form>
+   
+      
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Scream</title>
+    <link rel="stylesheet" type="text/css" href="scream.css">
+</head>
+<body>
+
+        <header class="logo">
+          <a href="index.html"><img src="logo/SquareEyes_Logo.png" width="65" height="65" alt="logo for Website"></a>
+        </header>
+    
+    <div class="main-container">
+        <div class="text-image">
+            <img src="images/Square_Eyes_Cover4.jpeg" alt="moviepicture">
+            <div>
+                <h1>Scream</h1>
+                <span class="info" style="color: red;">2022.1 t 54 m.Skrekk,Thriller</span>
+                <p>25 years after a streak of brutal murders shocked the quiet town of<br><br> Woodsboror,Calif,a new killer dons the Ghostface mask and begins<br><br> targeting a group of teenagers to resurrect secrets from the towns.</p>
+                    
+              <ul>
+                <li>Action, Drama<br><br></li>
+                <li>4K Ultra HD Blu-ray<br><br></li>
+                <li>2022<br><br></li>
+                <li>Nordisk<br><br></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+      <a href="Oppret.html" class="btn1">kjøp</a>
+        <a href="Oppret.html" class="btn2">leie</a>
+      </div>
+     
+    <div class="trailer">
+        <video class="video-responsive" controls>
+            <source src="Trailer/Scream.mp4" type="video/mp4">
+        </video>
+    </div>
+    <footer>
+      <button class="accordion">SQUAEREEYES</button>
+      <div class="panel">
+        <p>Lorem ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquid, quia modi aspernatur dolore perspiciatis similique earum. Accusantium ipsum maxime, temporibus eum possimus deleniti delectus voluptatum ea, quod eaque sapiente?..</p>
+      </div>
+      
+      <button class="accordion">INFORMATION</button>
+      <div class="panel">
+        <p>Lorem ipsum..Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquid, quia modi aspernatur dolore perspiciatis similique earum. Accusantium ipsum maxime, temporibus eum possimus deleniti delectus voluptatum ea, quod eaque sapiente?.</p>
+      </div>
+      
+      <button class="accordion">PARTNER-KUNDER</button>
+      <div class="panel">
+        <p>Lorem ipsumjkdjdfkkkkkLorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquid, quia modi aspernatur dolore perspiciatis similique earum. Accusantium ipsum maxime, temporibus eum possimus deleniti delectus voluptatum ea, quod eaque sapiente?</p>
+      </div>
+      <button class="accordion">OM OSS</button>
+      <div class="panel">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquid, quia modi aspernatur dolore perspiciatis similique earum. Accusantium ipsum maxime, temporibus eum possimus deleniti delectus voluptatum ea, quod eaque sapiente?</p>
+      </div>
+      <button class="accordion">FØLG OSS</button>
+      <div class="panel">
+        <p>Lorem ipsum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquid, quia modi aspernatur dolore perspiciatis similique earum. Accusantium ipsum maxime, temporibus eum possimus deleniti delectus voluptatum ea, quod eaque sapiente?..</p>
+      </div>
+  
+      </footer> 
+      <script>
+        // First, we select the accordion elements and create a NodeList named 'acc'.
+      var acc = document.querySelectorAll(".accordion");
+      
+      // Then, we add a click event listener to each accordion element.
+      acc.forEach(function (button) {
+        button.addEventListener("click", function () {
+          // We check if the clicked button belongs to the 'header' element.
+          // If it belongs, we find the next 'div.panel' element.
+          // If it doesn't belong, we find the same 'div.panel' element inside the 'footer'.
+          var panel = this.nextElementSibling.classList.contains('header')
+            ? this.nextElementSibling.nextElementSibling
+            : this.nextElementSibling;
+      
+          // To toggle the visibility of the panel, we use the 'max-height' style property.
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null; // If the panel is open, we close it.
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px"; // If the panel is closed, we open it.
+          }
+        });
+      });
+      
+        </script>
+</body>
+</html>

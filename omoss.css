@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+
+}
+
+.header {
+    background-color: maroon;
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
